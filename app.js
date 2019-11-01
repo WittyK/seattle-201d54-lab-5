@@ -11,7 +11,7 @@ Test this function by hand in the console to get it working, and when you think 
 function sum(a, b) { //eslint-disable-line
 // return an array where the first number is the sum, and the second number is a string
 var myArray = [];
-var sumAnswer = a +b;
+var sumAnswer = a + b;
 myArray[0] = sumAnswer
 var result = `The sum of ${a} and ${b} is ${sumAnswer}.`
 myArray[1] = result;
@@ -33,11 +33,16 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiply(a, b) { //eslint-disable-line
-
+var productArray = [];
+var productAnswer = a * b;
+productArray[0] = productAnswer
+var product = `The product of ${a} and ${b} is ${productAnswer}.`
+productArray[1] = product;
+return productArray;
 }
 
 // Here is the test for multiply(); uncomment it to run it
-// testMultiply(5,9);
+testMultiply(5,9);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
