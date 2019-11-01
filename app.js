@@ -59,11 +59,23 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sumAndMultiply(a, b, c) { //eslint-disable-line
+var q3SumAndMultiplyArray = [];
+var sumab = sum(a, b)[0];
+var q3Sum = sum(sumab, c)[0];
+var sumResult = `${a} and ${b} and ${c} sum to ${q3Sum}.`
+q3SumAndMultiplyArray[2] = sumResult;
 
+var productab = multiply(a, b)[1];
+var q3Product = multiply(productab, c)[1]
+q3SumAndMultiplyArray[1] = q3Product
+var productResult = `The product of ${a} and ${b} and ${c} is ${q3Product}.`
+q3SumAndMultiplyArray[3] = productResult;
+
+return q3SumAndMultiplyArray;
 }
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
-// testSumAndMultiply(4,7,5);
+testSumAndMultiply(4,7,5);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
